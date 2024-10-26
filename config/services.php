@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'weather_stack' => [
+        'url' => env('WEATHERSTACK_API_URL'),
+        'key' => env('WEATHERSTACK_API_KEY')
+    ],
+
+    'via_cep' => [
+        'url' => env('VIA_CEP_API_URL'),
+    ],
 ];

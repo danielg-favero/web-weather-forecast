@@ -9,8 +9,7 @@ RUN apk add --no-cache \
     zlib-dev
 
 # Adicionar depedências do PHP
-RUN docker-php-ext-install gd \
-    && docker-php-ext-install zip
+RUN docker-php-ext-install zip gd pdo_mysql exif pcntl bcmath
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

@@ -18,6 +18,7 @@ Caso for necessário, crie uma tabela mysql para a aplicação
 
 ```bash
 docker-compose exec mysql sh
+mysql -uroot -proot
 create database laravel;
 ```
 
